@@ -1,7 +1,6 @@
 # Q1: Snapshot akun harian
 
 - `account_snapshot.py`: job PySpark hasil rewrite
-- `tests/test_account_snapshot.py`: unit test di Spark lokal (6 lulus)
 - `dags/account_snapshot_dag.py`: DAG Airflow produksi (job Databricks, alert Slack)
 
 ## (a) Masalah
