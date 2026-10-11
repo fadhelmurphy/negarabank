@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "negarabank",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "negarabank",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    }
+  }
+}

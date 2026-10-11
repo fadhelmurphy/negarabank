@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: fct_customer_health_monthly
+    description: "Scorecard kesehatan nasabah bulanan untuk OJK. Satu baris per customer_id dan report_month."
+    columns:
+      - name: customer_id
+        data_tests: [not_null]
+      - name: report_month
+        data_tests: [not_null]
+      - name: risk_flag
+        description: "utilisasi kredit > 0,8 ATAU PD > 0,3 ATAU total saldo turun > 30% dari bulan lalu"
+        data_tests: [not_null]
+      - name: credit_utilization_ratio
+        description: "total saldo kartu kredit / total limit; NULL kalau nasabah tidak punya kartu kredit"

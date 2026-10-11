@@ -1,0 +1,16 @@
+version: 2
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: transactions
+      - name: accounts
+      - name: credit_scores
+  - name: silver
+    schema: silver
+    description: "Pengganti output Q1 silver.account_snapshots (saldo akhir bulan)"
+    tables:
+      - name: account_month_end_balance
+      - name: transactions
+      - name: accounts
+      - name: credit_scores

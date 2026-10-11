@@ -1,0 +1,7 @@
+pyspark==3.5.3
+pytest>=8
+boto3                                    # AWS Secrets Manager (prod)
+apache-airflow-providers-databricks      # DAG
+apache-airflow-providers-slack
+apache-airflow-providers-pagerduty
+apache-airflow-providers-oracle

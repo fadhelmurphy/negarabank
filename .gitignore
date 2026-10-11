@@ -1,0 +1,18 @@
+
+.env
+**/.env
+
+# dataset (all csv files)
+data/
+
+airflow/logs/
+airflow/output/
+
+q2/dbt/target/
+q2/dbt/logs/
+q2/dbt/dbt_packages/
+q2/dbt/.user.yml
+
+__pycache__/
+*.pyc
+.pytest_cache/
